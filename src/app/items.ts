@@ -9,6 +9,7 @@ export interface Item {
   count: number;
   profit: number;
   price: number;
+  tag?: number;
   order?: [string]; 
   attachments?: [Item]
 }
@@ -24,7 +25,7 @@ export const items = [
     price: 2503.00,
     state: 0,
     profit: 43,
-    order: ["Change Order1"],
+    order: ["1"],
     attachments: [
       {
         id: 2,
@@ -35,6 +36,7 @@ export const items = [
         count: 1,
         price: 2503.00,
         state: 0,
+        tag: 1,
         profit: 43,
       },
       {
@@ -46,6 +48,7 @@ export const items = [
         count: 1,
         price: 2503.00,
         state: 0,
+        tag: 2,
         profit: 43,
       },
     ]
@@ -61,7 +64,8 @@ export const items = [
     price: 2503.00,
     state: 1,
     profit: 43,
-    order: ["Change Order1"],
+    tag: 1,
+    order: ["1"],
     attachments: [
       {
         id: 5,
@@ -72,6 +76,7 @@ export const items = [
         count: 1,
         price: 2503.00,
         state: 1,
+        tag: 1,
         profit: 43,
       },
       {
@@ -97,7 +102,8 @@ export const items = [
     count: 999,
     price: 2503.00,
     profit: 43,
-    order: ["Change Order1", "change Order2", "Change Order3"],
+    tag: 2,
+    order: ["1", "2", "3"],
     attachments: [
       {
         id: 8,
@@ -107,6 +113,7 @@ export const items = [
         short_info: "75\" Class HDR UHD Smart LED TV",
         count: 1,
         price: 2503.00,
+        tag: 2,
         profit: 43,
       },
       {
@@ -131,7 +138,8 @@ export const items = [
     count: 999,
     price: 2503.00,
     profit: 43,
-    order: ["Change Order1", "Change Order2", "Change Order3"],
+    tag: 1,
+    order: ["1", "2", "3"],
   },
   
 ];
