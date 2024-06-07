@@ -1,0 +1,35 @@
+:host {
+  background-color: #3A3A3F;
+  border-radius: 1.5rem;
+  display: flex;
+  height: 60px;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 1rem;
+  padding-left: 3px;
+  padding-right: 3px;
+  justify-content: space-between;
+  :first-child {
+    border-right: 1px solid #505054;
+  }
+  :last-child {
+    border-left: 1px solid #505054;
+  }
+  span {
+    width: 33%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #CFCFD4;
+    font-size: 0.8rem;
+  }
+  .active {
+    height: 85%;
+    border-radius: 1rem;
+    border: 0;
+    background-color: #73757B;
+    color: white;
+  }
+}
