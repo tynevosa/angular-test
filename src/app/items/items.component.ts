@@ -13,4 +13,10 @@ import { CommonModule } from '@angular/common';
 })
 export class ItemsComponent {
   items = [...items];
+  totalprice = 0 as number;
+  ngOnInit(): void {
+    for(let i = 0; i < this.items.length; i++){
+      this.totalprice += this.items[i].price;
+    }
+  }
 }

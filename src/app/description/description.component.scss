@@ -6,6 +6,7 @@
     flex-direction: row;
     justify-content: space-between;
     height: 50px;
+    padding-left: 15px;
     .title {
       font-size: 1.7rem;
       display: flex;
@@ -36,8 +37,5 @@
         color: #F94F01;
       }
     }
-  }
-  .add-description {
-    color: #F94F01;
   }
 }

@@ -27,14 +27,21 @@
 	<div ngbAccordion class="w-[100%] ">
 		<div ngbAccordionItem [collapsed]="true">
 			<h2 ngbAccordionHeader>
-				<button ngbAccordionButton>
+				<button ngbAccordionButton class="z-0">
 					<img src="/assets/icon.png" class="mr-1 "/>
 					{{item.attachments.length}} Attachments Included • ${{total}}
 				</button>
 			</h2>
 			<div ngbAccordionCollapse>
 				<div ngbAccordionBody>
-					<ng-template>
+					<ng-template >
+						<div class="absolute -translate-y-full right-5 z-10 h-[51.19px] flex items-center">
+							<span class="text-[0.9rem] text-[#212529] mr-2">Combine</span>
+							<label class="switch">
+								<input type="checkbox">
+								<span class="slider round "></span>
+							</label>
+						</div>
 						<div *ngFor="let element of item.attachments" class="border-t-[1px]">
 							<app-element [item]="element"></app-element>
 						</div>
