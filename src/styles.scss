@@ -94,6 +94,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   }
   .accordion-button:not(.collapsed) {
     color: var(--bs-accordion-btn-color);
+    box-shadow: 0 0 0 0;
   }
   background-color: #F7F7F7;
 
