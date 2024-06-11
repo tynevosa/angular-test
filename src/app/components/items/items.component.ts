@@ -1,5 +1,5 @@
 import { Component, NgModule } from '@angular/core';
-import { items } from '../items';
+import { items } from '../../items';
 import { ItemComponent } from '../item/item.component';
 import { CommonModule } from '@angular/common';
 

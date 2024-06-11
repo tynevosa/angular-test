@@ -14,6 +14,7 @@ import { ElementComponent } from '../element/element.component';
 export class ItemComponent {
   @Input() item: any;
   total = 0 as number;
+  flag = false as boolean;
   constructor(config: NgbAccordionConfig) {
 		// customize default values of accordions used by this component tree
 		config.closeOthers = true;
@@ -24,5 +25,9 @@ export class ItemComponent {
         this.total += this.item.attachments[i].price;
       }
     }
+  }
+
+  toggle(): void {
+    this.flag = !this.flag
   }
 }
